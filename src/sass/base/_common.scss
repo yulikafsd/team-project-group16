@@ -1,0 +1,10 @@
+body {
+  @include fontBody;
+  color: $primary-text-color;
+
+  &.modal-open {
+    overflow: hidden;
+  }
+}
+
+// Сюда можно добавить правила для контейнера, заголовков...
