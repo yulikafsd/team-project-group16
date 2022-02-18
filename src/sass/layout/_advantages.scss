@@ -45,7 +45,7 @@
   }
 }
 .advantages-list__item:not(:last-child) {
-  margin-bottom: 104px;
+  margin-bottom: 38px;
   @include minMedia($tab) {
     margin-bottom: 0;
     margin-right: 60px;
@@ -60,22 +60,23 @@
   margin-bottom: 5px;
   @include minMedia($tab) {
     font-size: 48px;
-    line-height: 55 / 48;
+    line-height: 1.15;
     margin-bottom: 13px;
   }
   @include minMedia($desk) {
     font-size: 58px;
-    line-height: 66 / 58;
+    line-height: 1.14;
     margin-bottom: 15px;
   }
 }
 .advantages-list__text {
-  @include fontBody($dm-sans, 500, 12px, 1.7);
+  @include fontBody($dm-sans, 700, 12px, 1.7);
   color: $primary-text-color;
 
   @include minMedia($tab) {
     font-size: 14px;
     line-height: 1.74;
+    letter-spacing: 0.02em;
   }
   @include minMedia($desk) {
     font-size: 16px;
