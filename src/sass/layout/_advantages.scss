@@ -33,7 +33,7 @@
     padding-bottom: 68px;
   }
   @include minMedia($desk) {
-    padding-top: 32px;
+    padding-top: 35px;
     padding-bottom: 70px;
   }
 }
@@ -71,11 +71,13 @@
     font-size: 48px;
     line-height: 1.15;
     margin-bottom: 13px;
+    text-transform: none;
   }
   @include minMedia($desk) {
     font-size: 58px;
     line-height: 1.14;
     margin-bottom: 15px;
+    text-transform: none;
   }
 }
 .advantages-list__text {
