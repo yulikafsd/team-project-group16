@@ -1,6 +1,6 @@
 // Кнопка - осталось просто задать ширину для стилей кнопки в своей секции
 
-.white-button {
+.button {
   display: block;
   height: 44px;
   margin-right: auto;
@@ -20,19 +20,9 @@
   &:focus {
     background-color: $button-bg-color;
   }
-}
 
-.red-button {
-  display: block;
-  height: 44px;
-  margin-right: auto;
-  margin-left: auto;
-
-  color: $secondary-color;
-  background-color: $primary-color;
-  border: transparent;
-  border-radius: $button-border-radius;
-
-  @include fontButton;
-  text-align: center;
+  &--red {
+    color: $secondary-color;
+    background-color: $primary-color;
+  }
 }
