@@ -1,0 +1,195 @@
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+
+  @include maxMedia($preMob) {
+    width: 100%;
+    min-width: 320px;
+  }
+
+  @include minMedia($mob) {
+    width: 480px;
+  }
+
+  @include minMedia($tab) {
+    width: 768px;
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+
+  @include minMedia($desk) {
+    width: 1280px;
+    padding-left: 115px;
+    padding-right: 115px;
+  }
+}
+
+.rewiews {
+  padding: 60px 0;
+}
+
+.swiper-slide {
+  position: relative;
+}
+
+.box {
+  background: repeating-linear-gradient (#fafafa 0px, #fafafa 30px, #e1e1e1 30px, #e1e1e1 31px);
+
+  @include maxMedia($preMob) {
+  }
+
+  @include minMedia($mob) {
+  }
+
+  @include minMedia($tab) {
+  }
+
+  @include minMedia($desk) {
+  }
+}
+
+.rewiews-photo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 29px;
+
+  @include minMedia($mob) {
+  }
+
+  @include minMedia($tab) {
+    margin-bottom: 19px;
+  }
+
+  @include minMedia($desk) {
+    margin-bottom: 15px;
+  }
+}
+
+.rewiews-post {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  padding: 43px 66px 26px 59px;
+  background: #fafafa;
+
+  @include maxMedia($preMob) {
+    width: 280px;
+    height: 308px;
+  }
+
+  @include minMedia($mob) {
+    width: 440px;
+  }
+
+  @include minMedia($tab) {
+    padding: 47px 80px 34px 80px;
+    margin-bottom: 24px;
+    width: 620px;
+    height: 164px;
+  }
+
+  @include minMedia($desk) {
+    padding: 47px 89px 39px 87px;
+    margin-bottom: 15px;
+    width: 926px;
+    height: 138px;
+  }
+
+  &::before {
+    position: absolute;
+    top: 26px;
+    left: 61px;
+    content: url(../images/rewiews/rewiews-icon.svg);
+
+    @include minMedia($mob) {
+      top: 26px;
+      left: 48px;
+    }
+
+    @include minMedia($tab) {
+      top: 30px;
+      left: 40px;
+    }
+    @include minMedia($desk) {
+      top: 32px;
+      left: 50px;
+    }
+  }
+}
+
+.rewiews-text {
+  margin: 0;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.583;
+  text-align: center;
+  color: #000000;
+
+  @include minMedia($tab) {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 2.142;
+    text-align: center;
+    letter-spacing: 0.04em;
+  }
+
+  @include minMedia($desk) {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.875;
+    text-align: center;
+    letter-spacing: 0.04em;
+  }
+}
+
+.rewiews-sity {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+
+  @include minMedia($tab) {
+    margin-bottom: 35px;
+  }
+}
+
+.rewiews-name {
+  font-size: 14px;
+  line-height: 1.857;
+  text-align: center;
+  color: #000000;
+  font-style: normal;
+}
+
+// PAGINATION
+.swiper-pagination {
+  position: relative;
+}
+
+.swiper-pagination-bullet {
+  background-size: cover;
+  border-radius: unset;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+
+  &:hover,
+  &:focus {
+    background: #d31342;
+    background-size: cover;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  background-image: url();
+  background-color: #d31342;
+  background-size: cover;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+}
