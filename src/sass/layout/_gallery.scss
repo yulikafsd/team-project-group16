@@ -12,6 +12,11 @@
   padding-top: 48px;
   padding-bottom: 40px;
   background-image: linear-gradient(to bottom, #fff5f6 45%, #ffffff 45%);
+
+  @include minMedia($tab) {
+    padding-top: 70px;
+    padding-bottom: 61px;
+  }
 }
 
 .gallery .container {
@@ -19,21 +24,54 @@
 
   @include minMedia($mob) {
     display: block;
-    padding-left: 17px;
-    padding-right: 17px;
-    margin: 0 auto;
+  }
+
+  @include minMedia($mob) {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
+  @include minMedia($tab) {
+    padding-left: 73px;
+    padding-right: 73px;
+  }
+
+  @include minMedia($desk) {
+    padding-left: 133px;
+    padding-right: 133px;
   }
 }
 
 .gallery-grid {
   display: block;
+  width: 292px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 287px;
   display: grid;
   grid-template-columns: repeat(7, 40px);
   grid-template-rows: repeat(9, 12px);
   grid-gap: 2px;
+
+  @include minMedia($mob) {
+    width: 384px;
+    grid-template-columns: repeat(7, 52px);
+    grid-template-rows: repeat(9, 15px);
+    grid-gap: 3px;
+  }
+
+  @include minMedia($tab) {
+    width: 626px;
+    grid-template-columns: repeat(7, 86px);
+    grid-template-rows: repeat(9, 26px);
+    grid-gap: 4px;
+  }
+
+  @include minMedia($desk) {
+    width: 1015px;
+    grid-template-columns: repeat(7, 139px);
+    grid-template-rows: repeat(9, 42px);
+    grid-gap: 7px;
+  }
 }
 
 .gallery-grid__item {
@@ -94,7 +132,7 @@
   object-fit: cover;
   width: 100%;
   height: 100%;
-  border-radius: 5px;
+  border-radius: 15%;
   transform: scale(1);
   transition: $gallery-effect;
   z-index: 0;
