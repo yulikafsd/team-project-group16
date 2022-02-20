@@ -98,6 +98,7 @@
   border-radius: 4px;
   padding-left: 42px;
   outline: none;
+  caret-color: $primary-color;
   transition: border-color $main-effect;
   &:focus {
     border-color: $primary-color;
