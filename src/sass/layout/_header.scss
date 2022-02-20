@@ -4,22 +4,21 @@
   top: 0;
   left: 0;
   width: 100%;
-}
-
-.header__container {
-  // outline: 1px solid orange;
-  @include minMedia($desk) {
-    padding-left: 46px;
-  }
-}
-.header-box {
-  @include centeredFlex($just: space-between);
   padding-top: 6px;
   // padding-bottom: 21px;
   @include minMedia($tab) {
     padding-top: 38px;
   }
 }
+
+.header__container {
+  // outline: 1px solid orange;
+  @include centeredFlex($just: space-between);
+  @include minMedia($desk) {
+    padding-left: 46px;
+  }
+}
+
 .header__nav {
   display: block;
   text-align: center;
