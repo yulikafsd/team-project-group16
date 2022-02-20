@@ -113,6 +113,7 @@
   padding: 12px 16px;
   resize: none;
   outline: none;
+  caret-color: $primary-color;
   transition: border-color $main-effect;
 
   &::placeholder {
