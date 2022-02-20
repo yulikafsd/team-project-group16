@@ -11,7 +11,7 @@
   }
 }
 
-.header__container {
+.header .header__container {
   // outline: 1px solid orange;
   @include centeredFlex($just: space-between);
   @include minMedia($desk) {
