@@ -8,23 +8,45 @@
 
 .header__container {
   // outline: 1px solid orange;
-  //   padding-bottom: 21px;
-  padding-top: 6px;
-  @include centeredFlex($just: space-between);
-  @include minMedia($tab) {
-    padding-top: 38px;
-  }
   @include minMedia($desk) {
     padding-left: 46px;
   }
 }
-
+.header-box {
+  @include centeredFlex($just: space-between);
+  padding-top: 6px;
+  // padding-bottom: 21px;
+  @include minMedia($tab) {
+    padding-top: 38px;
+  }
+}
 .header__nav {
   display: block;
   text-align: center;
   @include minMedia($tab) {
     @include centeredFlex();
   }
+}
+
+.header-logo__box {
+  @include centeredFlex();
+}
+
+.header-logo__icon {
+  width: 50px;
+  height: 50px;
+  fill: $primary-color;
+}
+
+.header-logo__text {
+  margin-left: 20px;
+  text-align: center;
+  @include fontTitle($fs: 30px, $lh: 34 / 30);
+}
+.animate__flip {
+  animation-duration: 2000ms;
+  animation-name: flip;
+  animation-delay: 100ms;
 }
 
 .header__list {
@@ -34,8 +56,8 @@
     @include centeredFlex();
   }
 }
-.header__item:not(:last-child) {
-  margin-right: 35px;
+.header__item:not(:first-child) {
+  margin-left: 35px;
 }
 
 .header__link {
@@ -48,24 +70,6 @@
   &:focus {
     color: $primary-color;
   }
-}
-
-.promo-button__header {
-  display: none;
-  @include minMedia($tab) {
-    padding: 0 37px;
-    margin-right: 0;
-    margin-left: 0;
-    @include centeredFlex();
-  }
-}
-
-.promo-button__icon {
-  width: 9px;
-  height: 15px;
-  margin-left: 12px;
-  fill: none;
-  stroke: $primary-color;
 }
 
 .burger {
@@ -86,8 +90,30 @@
 .menu-icon {
   stroke: $primary-color;
   transition: stroke $main-effect;
+  transform: scale(1);
   &:hover,
   &:focus {
-    stroke: #e17992;
+    // stroke: #e17992;
+    transform: scale(1.2);
   }
+}
+.button-box {
+  margin-left: 30px;
+}
+.promo-button__header {
+  display: none;
+  @include minMedia($tab) {
+    padding: 0 37px;
+    margin-right: 0;
+    margin-left: 0px;
+    @include centeredFlex();
+  }
+}
+
+.promo-button__icon {
+  width: 9px;
+  height: 15px;
+  margin-left: 12px;
+  fill: none;
+  stroke: $primary-color;
 }

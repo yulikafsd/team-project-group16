@@ -1,37 +1,46 @@
 <header class="header">
   <div class="container header__container">
-    <nav class="header__nav">
-      <a href="./index.html" class="link header__logo">
-        <img
-          class="header__img"
-          srcset="./images/logo@1x.png 1x, ./images/logo@2x.png 2x, ./images/logo@3x.png 3x"
-          src="./images/logo@1x.png"
-          alt="site logo"
-          width="199"
-          height="50"
-        />
-      </a>
-      <ul class="list header__list">
-        <li class="header__item"><a href="./index.html" class="link header__link">Home</a></li>
-        <li class="header__item"><a href="#reviews" class="link header__link">About us</a></li>
-        <li class="header__item">
-          <a href="#about" class="link header__link">How it&#8242;s made&#63;</a>
-        </li>
-        <li class="header__item"><a href="#products" class="link header__link">Our products</a></li>
-        <li class="header__item"><a href="#contacts" class="link header__link">Contact</a></li>
-      </ul>
-    </nav>
-    <button type="button" class="burger burger__header js-open-menu" aria-label="burger menu">
-      <svg class="burger__icon menu-icon" width="20" height="12">
-        <use href="./images/icons.svg#icon-burger"></use>
-      </svg>
-    </button>
+    <div class="header-box">
+      <nav class="header__nav">
+        <a href="./index.html" class="link header-logo__link">
+          <span class="header-logo__box">
+            <svg class="header-logo__icon animate__flip" width="50" height="50">
+              <use href="./images/icons.svg#icon-logo"></use>
+            </svg>
+            <span class="header-logo__text">Icecream</span>
+          </span>
+        </a>
+        <ul class="list header__list">
+          <li class="header__item"><a href="./index.html" class="link header__link">Home</a></li>
+          <li class="header__item"><a href="#reviews" class="link header__link">About us</a></li>
+          <li class="header__item">
+            <a href="#about" class="link header__link">How it&#8242;s made&#63;</a>
+          </li>
+          <li class="header__item">
+            <a href="#products" class="link header__link">Our products</a>
+          </li>
+          <li class="header__item"><a href="#contacts" class="link header__link">Contact</a></li>
+        </ul>
+      </nav>
 
-    <button type="button" class="promo-button promo-button__header button" data-modal-open>
-      <span class="promo-button__text">Buy now</span>
-      <svg class="promo-button__icon" width="4" height="8">
-        <use href="./images/icons.svg#icon-arrow"></use>
-      </svg>
-    </button>
+      <button
+        type="button"
+        class="burger burger__header js-open-menu"
+        aria-label="open menu button"
+      >
+        <svg class="burger__icon menu-icon" width="20" height="12">
+          <use href="./images/icons.svg#icon-burger"></use>
+        </svg>
+      </button>
+
+      <span class="button-box">
+        <button type="button" class="promo-button promo-button__header button" data-modal-open>
+          <span class="promo-button__text">Buy now</span>
+          <svg class="promo-button__icon" width="4" height="8">
+            <use href="./images/icons.svg#icon-arrow"></use>
+          </svg>
+        </button>
+      </span>
+    </div>
   </div>
 </header>
