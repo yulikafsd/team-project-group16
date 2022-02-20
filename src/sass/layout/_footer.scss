@@ -1,27 +1,35 @@
-// .container {
-//     padding-left: 20px;
-//     padding-right: 20px;
-//     margin: 0 auto;
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
 
-//     @include maxMedia($preMob) {
-//         width: 100%;
-//         min-width: 320px;
-//     }
+    @include maxMedia($preMob) {
+        width: 100%;
+        min-width: 320px;
+    }
 
-//     @include minMedia($mob) {
-//         width: 480px;
-//     }
+    @include minMedia($mob) {
+        width: 480px;
+    }
 
-//     @include minMedia($tab) {
-//         width: 768px;
+    @include minMedia($tab) {
+        width: 768px;
     
-//     }
+    }
 
-//     @include minMedia($desk) {
-//         width: 1280px;
-//     }
-// }
+    @include minMedia($desk) {
+        width: 1280px;
+    }
+}
 
-.footer__name{
-
+.footer__bottom-text{
+    font-family: $dm-sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: calc(21 / 14);
+    text-align: center;
+    color: $secondary-text-color;
+    width: 141px;
+    height: 42px;
 }
