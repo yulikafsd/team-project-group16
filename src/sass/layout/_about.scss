@@ -1,0 +1,236 @@
+.about {
+  background-color: $primary-bg-color;
+}
+.container__about {
+  @include maxMedia($preMob) {
+    padding-bottom: 39px;
+    padding-top: 139px;
+  }
+  @include minMedia($mob) {
+    padding-bottom: 39px;
+    padding-top: 139px;
+  }
+  @include minMedia($tab) {
+  }
+}
+.about__text {
+  @include maxMedia($preMob) {
+    width: 220px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @include minMedia($mob) {
+    width: 220px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @include minMedia($tab) {
+    margin-left: 357px;
+    margin-top: 100px;
+    width: 340px;
+  }
+}
+
+.about__pretitle {
+  @include maxMedia($preMob) {
+    font-family: Titan One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffa5ba;
+    margin-bottom: 15px;
+  }
+  @include minMedia($mob) {
+    font-family: Titan One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffa5ba;
+    margin-bottom: 15px;
+  }
+  @include minMedia($tab) {
+    font-family: Titan One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffa5ba;
+    margin-bottom: 16px;
+  }
+}
+.about__title {
+  @include maxMedia($preMob) {
+    font-family: Titan One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+    line-height: 39px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #d41443;
+    margin-bottom: 26px;
+  }
+  @include minMedia($mob) {
+    font-family: Titan One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+    line-height: 39px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #d41443;
+    margin-bottom: 26px;
+  }
+  @include minMedia($tab) {
+    font-family: Titan One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 55px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #d41443;
+  }
+}
+.cow_img {
+  @include maxMedia($preMob) {
+    margin-bottom: 46px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @include minMedia($mob) {
+    margin-bottom: 46px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @include minMedia($tab) {
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+  }
+}
+.section {
+  @include maxMedia($preMob) {
+    background-image: url(../images/milk-tel-2x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100% 90%;
+  }
+  @include minMedia($mob) {
+    background-image: url(../images/milk-tel-2x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100% 90%;
+  }
+  @include minMedia($tab) {
+    background-image: none;
+  }
+}
+.about__pretitle1 {
+  @include maxMedia($preMob) {
+    font-size: 12px;
+    line-height: 1.6;
+    color: #000000;
+    margin-bottom: 47px;
+  }
+  @include minMedia($mob) {
+    font-size: 12px;
+    line-height: 1.6;
+    color: #000000;
+    margin-bottom: 47px;
+  }
+  @include minMedia($tab) {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #000000;
+  }
+}
+.about__pretitle2 {
+  @include maxMedia($preMob) {
+    font-size: 12px;
+    line-height: 1.6;
+    color: #907e82;
+    margin-bottom: 47px;
+  }
+  @include minMedia($mob) {
+    font-size: 12px;
+    line-height: 1.6;
+    color: #907e82;
+    margin-bottom: 47px;
+  }
+  @include minMedia($tab) {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #907e82;
+  }
+}
+
+.white-button {
+  @include maxMedia($preMob) {
+    // position: absolute;
+    // left: 50px;
+    width: 176px;
+    height: 44px;
+    display: block;
+    height: 44px;
+    margin-right: auto;
+    margin-left: auto;
+    color: $primary-color;
+    background-color: $secondary-color;
+    border: transparent;
+    border-radius: $button-border-radius;
+
+    @include fontButton;
+    text-align: center;
+    transition: background-color $main-effect;
+
+    &:hover,
+    &:focus {
+      background-color: $button-bg-color;
+    }
+  }
+  @include minMedia($mob) {
+    // position: absolute;
+    // left: 50px;
+    width: 176px;
+    height: 44px;
+    display: block;
+    height: 44px;
+    margin-right: auto;
+    margin-left: auto;
+    color: $primary-color;
+    background-color: $secondary-color;
+    border: transparent;
+    border-radius: $button-border-radius;
+
+    @include fontButton;
+    text-align: center;
+    transition: background-color $main-effect;
+
+    &:hover,
+    &:focus {
+      background-color: $button-bg-color;
+    }
+  }
+  @include minMedia($tab) {
+    position: fixed;
+    left: 394px;
+  }
+}
