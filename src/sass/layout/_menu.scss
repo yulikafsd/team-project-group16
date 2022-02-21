@@ -1,13 +1,21 @@
 .mob-menu {
+  z-index: 99;
   right: 0;
   position: fixed;
   padding-top: 60px;
   width: 250px;
   height: 100vh;
   background-color: #e17992;
-
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-100%);
+  transition: 550ms cubic-bezier(0.4, 0, 0.2, 1);
+  .conteiner {
+    padding-left: 0;
+    padding-right: 0;
+  }
   @include minMedia($tab) {
-    width: 45vw;
+    width: 40vw;
   }
   @include minMedia($desk) {
     display: none;
@@ -47,9 +55,6 @@
     font-size: 16px;
     line-height: 1.31;
     color: #d41443;
-    & span {
-      margin-left: 19px;
-    }
     &:hover,
     &:focus {
       background-color: #ecebeb;
@@ -57,7 +62,16 @@
     }
     @include minMedia($tab) {
       width: 186px;
+      margin-right: 0;
+      margin-left: 85px;
     }
+  }
+  &__btn-icon {
+    width: 6px;
+    height: 10px;
+    margin-left: 15px;
+    fill: none;
+    stroke: $primary-color;
   }
   &__list {
     margin-top: 32px;
@@ -83,10 +97,8 @@
     }
   }
 }
-// .mob-menu__open-btn {
-//   top: 0;
-//   left: 0;
-// }
-// .mob-menu__open-icon {
-//   fill: #000;
-// }
+.mob-menu-container.is-open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}

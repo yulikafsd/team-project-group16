@@ -1,22 +1,24 @@
-<div class="mob-menu__open-btn-icon" >
-    <button type="button" class="mob-menu__open-btn" js-open-menu>
-        <svg class="mob-menu__open-icon" width="14" height="14">
-            <use href="./images/icons.svg#menu-icon"></use>
-        </svg>
-    </button>
-</div>
-<div class="mob-menu is-open" js-menu-container'>
-    <button type="button" class="mob-menu__close-btn" js-close-menu>
-        <svg class="mob-menu__close-icon" width="14" height="14">
-            <use href="./images/icons.svg#close-menu"></use>
-        </svg>
-    </button>
-    <button type="button" class="mob-menu__btn">Buy now <span> ></span></button>
-    <ul class="list mob-menu__list">
-        <li class="mob-menu__item "><a class="mob-menu__link" href="">Home</a></li>
-        <li class="mob-menu__item "><a class="mob-menu__link" href="">About us</a></li>
-        <li class="mob-menu__item "><a class="mob-menu__link" href="">How it’s made?</a></li>
-        <li class="mob-menu__item "><a class="mob-menu__link" href="">Our products</a></li>
-        <li class="mob-menu__item "><a class="mob-menu__link" href="">Contact</a></li>
-    </ul>
-</div>
+
+<div class="mob-menu js-menu-container mob-menu-container" id="mobile-menu">
+    <div class="conteiner">
+        <button type="button" class="mob-menu__close-btn js-close-menu menu-toggle-close"
+        aria-label="Mobile menu closer" >
+            <svg class="mob-menu__close-icon" width="14" height="14">
+                <use href="./images/icons.svg#close-menu"></use>
+            </svg>
+        </button>
+        <button type="button" class="mob-menu__btn" data-modal-open >Buy now
+            <svg class="mob-menu__btn-icon" width="4" height="8">
+                <use href="./images/icons.svg#icon-arrow"></use>
+            </svg>
+        </button>
+        <ul class="list mob-menu__list">
+            <li class="mob-menu__item "><a class="mob-menu__link" href="#">Home</a></li>
+            <li class="mob-menu__item "><a class="mob-menu__link" href="#advantages">About us</a></li>
+            <li class="mob-menu__item "><a class="mob-menu__link" href="#about">How it&#8242;s made&#63;</a></li>
+            <li class="mob-menu__item "><a class="mob-menu__link" href="#products">Our products</a></li>
+            <li class="mob-menu__item "><a class="mob-menu__link" href="#contacts">Contact</a></li>
+        </ul>
+        </div>
+    </div>
+ 
