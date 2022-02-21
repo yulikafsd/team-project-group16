@@ -17,6 +17,11 @@
     padding-top: 70px;
     padding-bottom: 61px;
   }
+
+  @include minMedia($tab) {
+    padding-top: 69px;
+    padding-bottom: 62px;
+  }
 }
 
 .gallery .container {

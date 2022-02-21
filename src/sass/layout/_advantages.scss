@@ -4,11 +4,10 @@
   padding-bottom: 49px;
   @include minMedia($tab) {
     padding-top: 33px;
-    padding-bottom: 68px;
+    padding-bottom: 70px;
   }
   @include minMedia($desk) {
     padding-top: 35px;
-    padding-bottom: 70px;
   }
 }
 .advantages-list {
