@@ -28,13 +28,13 @@ body {
 
   @include minMedia($tab) {
     width: 768px;
-    padding-left: 34px;
-    padding-right: 34px;
+    padding-left: 36px;
+    padding-right: 36px;
   }
 
   @include minMedia($desk) {
-    width: 1280px;
-    padding-left: 115px;
-    padding-right: 115px;
+    width: 1200px;
+    padding-left: 75px;
+    padding-right: 75px;
   }
 }
