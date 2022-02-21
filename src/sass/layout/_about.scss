@@ -14,7 +14,7 @@
 }
 .left-picture {
   position: absolute;
-  bottom: 150px;
+  bottom: 175px;
   right: 0;
   @include minMedia($desk) {
     bottom: 0;
@@ -29,7 +29,7 @@
   }
 }
 .milk-img {
-  height: 150px;
+  height: 94px;
   width: 100%;
   @include minMedia($desk) {
     height: 439px;
@@ -64,7 +64,6 @@
     width: 100%;
   }
   @include minMedia($desk) {
-    width: 100%;
     padding-left: 587px;
     margin-right: 0;
     margin-left: 0;
@@ -145,6 +144,7 @@
   @include minMedia($desk) {
     font-size: 16px;
     line-height: 1.8;
+    margin-bottom: 35px;
   }
 }
 .about__pretitle2 {
@@ -159,6 +159,10 @@
     font-size: 14px;
     line-height: 1.8;
   }
+  @include minMedia($desk) {
+    font-size: 14px;
+    line-height: 1.9;
+  }
 }
 .about__pretitle3 {
   font-family: DM Sans;
@@ -172,6 +176,11 @@
     font-size: 14px;
     line-height: 1.8;
   }
+  @include minMedia($desk) {
+    font-size: 14px;
+    line-height: 1.9;
+    margin-bottom: 45px;
+  }
 }
 .white-button {
   width: 176px;
@@ -184,13 +193,6 @@
   @include minMedia($desk) {
     font-size: 16px;
     line-height: 21px;
-    left: -90px;
+    left: -150px;
   }
-}
-.pointer-buttom {
-  position: absolute;
-  right: 38px;
-  left: 140px;
-  top: 19px;
-  bottom: 17px;
 }
