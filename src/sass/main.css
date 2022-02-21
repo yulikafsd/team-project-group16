@@ -630,6 +630,8 @@ body.modal-open {
   width: 250px;
   height: 100vh;
   background-color: #e17992;
+  -webkit-transform: translateX(-170%);
+          transform: translateX(-170%);
 }
 
 .mob-menu .conteiner {
