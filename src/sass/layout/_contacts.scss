@@ -269,9 +269,19 @@
   }
 }
 
-.location-vector,
+.location-vector {
+  margin-left: 8px;
+  fill: none;
+  box-sizing: border-box;
+  @include minMedia($tab) {
+    margin-left: 13px;
+  }
+}
+
 .franchise-vector {
   margin-left: 8px;
+  fill: none;
+  stroke: #d41443;
   box-sizing: border-box;
   @include minMedia($tab) {
     margin-left: 13px;
