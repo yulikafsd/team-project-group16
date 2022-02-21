@@ -1,20 +1,47 @@
 <section class="section about" id="about">
-    <div class="container__about container">
+    <picture class="left-picture">
+        <source srcset="./images/milk-right-desk-1x.png 1x,  ./images/milk-right-desk-2x.png 2x" media="(min-width: 1200px)"
+            type="image" />
+        <source srcset="./images/milk-right-desk-1x.png 1x,  ./images/milk-right-desk-2x.png 2x" media="(min-width: 1200px)" />
+        <source srcset="./images/milk-right-tel-1x.png, ./images/milk-right-tel-2x.png 2x" media="(max-width: 767px)" type="image" />
+        <source srcset="./images/milk-right-tel-1x.png 1x, ./images/milk-right-tel-2x.png 2x" media="(max-width: 767px)" /><img
+            src="./images/milk-right-desk-1x.png" alt="milk picture" width="270" height="260" class="milk-img" />
+    </picture>
+    <picture class="right-picture">
+        <source srcset="./images/milk-left-desk-1x.png 1x,  ./images/milk-left-desk-2x.png 2x" media="(min-width: 1200px)"
+            type="image" />
+        <source srcset="./images/milk-left-desk-1x.png 1x,  ./images/milk-left-desk-2x.png 2x"
+            media="(min-width: 1200px)" />
+        <source srcset="./images/milk-left-tel-1x.png, ./images/milk-left-tel-2x.png 2x" media="(max-width: 767px)"
+            type="image" />
+        <source srcset="./images/milk-left-tel-1x.png 1x, ./images/milk-left-tel-2x.png 2x" media="(max-width: 767px)" />
+        <img src="./images/milk-left-desk-1x.png" alt="milk picture" width="270" height="260" class="milk-img" />
+    </picture>
+
+  <div class="container__about container">
         <div class="about__name">
-            <p class="about__pretitle">TRADITION AND LOVE</p>
-            <h2 class="about__title">HOW IT’S MADE?</h2>
+            <p class="about__pretitle">tradition and love</p>
+            <h2 class="about__title">how it&#8217;s made&quest;</h2>
         </div>
-  
-            <img class="cow_img" srcset="./images/cow-tel-1x.png 1x, ./images/cow-tel-2x.png 2x" src="./images/cow-tel-1x.png" alt="cow image" />
-            <!-- <img class="cow_img" srcset="./images/cow-tab-1x.png 1x, ./images/cow-tab-2x.png 2x" src="./images/cow-tab-1x.png" alt="cow image" /> -->
 
         <div class="about__text">
+                <picture>
+                    <source srcset="./images/cow-desk-1x.png 1x, ./images/cow-desk-2x.png 2x" media="(min-width: 1200px)"
+                        type="image" />
+                    <source srcset="./images/cow-desk-1x.png 1x, ./images/cow-desk-2x.png 2x" media="(min-width: 1200px)" />
+                    <source srcset="./images/cow-tab-1x.png 1x, ./images/cow-tab-2x.png 2x" media="(min-width: 768px)" type="image" />
+                    <source srcset="./images/cow-tab-1x.png 1x, ./images/cow-tab-2x.png 2x" media="(min-width: 768px)" />
+                    <source srcset="./images/cow-tel-2x.png 1x, ./images/cow-tel-2x.png 2x" media="(max-width: 767px)" type="image" />
+                    <source srcset="./images/cow-tel-1x.png 1x, ./images/cow-tel-2x.png 2x" media="(max-width: 767px)" /><img
+                        src="./images/cow-desk-2x.png" alt="cow picture" width="270" height="260" class="cow_img" />
+                </picture>
+                
             <p class="about__pretitle1">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros.
             Maecenas eleifend erat at justo fringilla.</p>
             <p class="about__pretitle2">Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat.
             Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.</p>
-            <p class="about__pretitle2">Aliquam erat volutpat. Aenean accumsan.</p>
+            <p class="about__pretitle3">Aliquam erat volutpat. Aenean accumsan.</p>
+            <button class="white-button button">Read more <img class="pointer-buttom" src="./images/pointer-desk-1x.png" alt="pointer picture"> </button>
         </div>
-        <button class="white-button button">Read more > </button>
     </div>
 </section>   
