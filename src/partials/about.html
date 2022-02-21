@@ -5,10 +5,18 @@
             <h2 class="about__title">HOW IT’S MADE?</h2>
         </div>
   
-            <img class="cow_img" srcset="./images/cow-tel-1x.png 1x, ./images/cow-tel-2x.png 2x" src="./images/cow-tel-1x.png" alt="cow image" />
-            <!-- <img class="cow_img" srcset="./images/cow-tab-1x.png 1x, ./images/cow-tab-2x.png 2x" src="./images/cow-tab-1x.png" alt="cow image" /> -->
-
+     
         <div class="about__text">
+                <picture>
+                    <source srcset=" ./images/cow-desk-1x.png 1x, ./images/cow-desk-2x.png 2x" media="(min-width: 1200px)"
+                        type="image" />
+                    <source srcset=" ./images/cow-desk-1x.png 1x, ./images/cow-desk-2x.png 2x" media="(min-width: 1200px)" />
+                    <source srcset=" ./images/cow-tab-1x.png 1x, ./images/cow-tab-2x.png 2x" media="(min-width: 768px)" type="image" />
+                    <source srcset=" ./images/cow-tab-1x.png 1x, ./images/cow-tab-2x.png 2x" media="(min-width: 768px)" />
+                    <source srcset=" ./images/cow-tab-2x.png 1x, ./images/cow-tab-2x.png 2x" media="(max-width: 767px)" type="image" />
+                    <source srcset=" ./images/cow-tab-1x.png 1x, ./images/cow-tab-2x.png 2x" media="(max-width: 767px)" /><img
+                        src="./images/cow-desk-1x.png" alt="cow pictire" width="270" height="260" class="cow_img" />
+                </picture>
             <p class="about__pretitle1">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros.
             Maecenas eleifend erat at justo fringilla.</p>
             <p class="about__pretitle2">Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat.
