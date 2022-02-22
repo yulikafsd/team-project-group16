@@ -1,49 +1,57 @@
 .backdrop {
-  z-index: 100;
   position: fixed;
-  z-index: 4;
+  z-index: 100;
   top: 0;
+  left: 0;
   width: 100vw;
   height: 100vh;
   background-color: rgba(255, 165, 186, 0.5);
   transition: opacity $main-effect, visibility $main-effect;
-  overflow-y: scroll;
+  // overflow-y: scroll;
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+}
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transition: all $main-effect;
 }
 .modal {
-  width: 100vw;
-  height: 100vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0 auto;
+  padding: 40px;
+
+  max-width: 450px;
+  width: 95vw;
+  max-height: 652px;
+  height: 95vh;
+  overflow: scroll;
   background-color: $primary-bg-color;
   box-shadow: $contacts-shadow;
-  min-height: 720px;
-  padding: 40px;
-  position: relative;
-  margin: 0 auto;
-  transform: scale(1);
+  transition: transform $main-effect;
+  transform: translate(-50%, -50%) scale(1);
+
   .backdrop.is-hidden & {
-    transform: scale(0.8);
+    transform: translate(-50%, -50%) scale(0.8);
     transition: transform $main-effect;
   }
 
-  @include minMedia($mob) {
-    width: 450px;
+  @include maxMedia($min) {
+    width: 100%;
+    position: fixed;
+    min-width: 320px;
   }
   @include minMedia($tab) {
-    width: 90vw;
-    width: 450px;
-    height: auto;
+    overflow: unset;
     border-radius: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
-    .backdrop.is-hidden & {
-      transform: translate(-50%, -50%) scale(0.8);
-      transition: transform $main-effect;
-    }
   }
   @include minMedia($desk) {
-    width: 500px;
-    min-height: 600px;
+    max-width: 528px;
+    max-height: 664px;
   }
 }
 
@@ -65,14 +73,9 @@
   &:focus,
   &:hover {
     stroke: $social-icon-bg-color;
+    border-radius: 50%;
     transform: rotate(180deg);
   }
-}
-
-.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
 }
 
 .modal__title {
@@ -100,7 +103,7 @@
 
 .form__input {
   width: 100%;
-  height: 40px;
+  height: 36px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding-left: 42px;
@@ -161,7 +164,7 @@
   color: $secondary-text-color;
   display: flex;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   @include minMedia($desk) {
     font-size: 14px;
     line-height: calc(24 / 14);
