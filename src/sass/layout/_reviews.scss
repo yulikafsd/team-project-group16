@@ -1,5 +1,15 @@
 .rewiews {
-  padding: 60px 0;
+  padding-top: 40px;
+  padding-bottom: 43px;
+
+  @include minMedia($tab) {
+    padding: 60px 0;
+  }
+
+  @include minMedia($desk) {
+    padding-top: 61px;
+    padding-bottom: 66px;
+  }
 }
 
 .swiper-slide {
@@ -10,9 +20,6 @@
   display: flex;
   justify-content: center;
   margin-bottom: 29px;
-
-  @include minMedia($mob) {
-  }
 
   @include minMedia($tab) {
     margin-bottom: 19px;
@@ -26,7 +33,12 @@
 .box {
   position: relative;
   padding: 3px 16px 6px 7px;
-  background-image: repeating-linear-gradient(transparent 0px 30px, #a7a7a7 31px, #a3a3a3 25px);
+  background-image: repeating-linear-gradient(
+    transparent 0px,
+    transparent 30px,
+    #e1e1e1 30px,
+    #e1e1e1 31px
+  );
 
   @include minMedia($mob) {
     padding: 5px 16px 6px 7px;
@@ -177,6 +189,9 @@
 // PAGINATION
 .swiper-pagination {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .swiper-pagination-bullet {
