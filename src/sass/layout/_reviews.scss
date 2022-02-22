@@ -37,8 +37,12 @@
 .box {
   position: relative;
   padding: 3px 16px 6px 7px;
-  background-image: repeating-linear-gradient(transparent 0px 30px, #a7a7a7 31px, #a3a3a3 25px);
-
+  background-image: repeating-linear-gradient(
+    transparent 0px,
+    transparent 30px,
+    #e1e1e1 30px,
+    #e1e1e1 31px
+  );
   @include minMedia($mob) {
     padding: 5px 16px 6px 7px;
   }
@@ -60,7 +64,7 @@
   padding: 40px 50px 30px 50px;
   width: 280px;
   height: auto;
-  background-color: rgba(#fafafa, 0.4);
+  background-color: #fafafa;
 
   @include minMedia($mob) {
     width: 440px;
