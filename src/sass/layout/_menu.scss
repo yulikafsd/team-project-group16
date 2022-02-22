@@ -1,3 +1,10 @@
+.conteiner-mob {
+  width: 250px;
+  @include minMedia($tab) {
+    width: 100%;
+  }
+}
+
 .mob-menu {
   z-index: 99;
   right: 0;
@@ -8,7 +15,7 @@
   background-color: #e17992;
   opacity: 0;
   visibility: hidden;
-  transform: translateX(-100%);
+  transform: translateX(100%);
   transition: 550ms cubic-bezier(0.4, 0, 0.2, 1);
   @include minMedia($tab) {
     width: 40%;
@@ -35,28 +42,19 @@
     &:hover,
     &:focus {
       fill: #d41443;
-      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      transition: fill $main-effect;
     }
   }
   &__btn {
-    background-color: #ffffff;
-    border-color: transparent;
-    width: 209px;
-    height: 44px;
-    border-radius: 22px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.31;
-    color: #d41443;
-    &:hover,
-    &:focus {
-      background-color: #ecebeb;
-      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
+    display: block;
+    min-width: 209px;
+    padding-left: 48px;
+    padding-right: 48px;
+    margin-bottom: 32px;
     @include minMedia($tab) {
-      width: 186px;
-      margin-left: auto;
-      margin-right: auto;
+      min-width: 186px;
+      padding-left: 43px;
+      padding-right: 43px;
     }
   }
   &__btn-icon {
@@ -66,14 +64,17 @@
     fill: none;
     stroke: $primary-color;
   }
-  &__list {
-    margin-top: 32px;
-  }
+
   &__item {
-    padding-left: 0;
+    padding-left: 21px;
     display: block;
     border-top: 1px solid #e18298;
-    border-bottom: 1px solid #e18298;
+    &:last-child {
+      border-bottom: 1px solid #e18298;
+    }
+    @include minMedia($tab) {
+      padding-left: 24px;
+    }
   }
   &__link {
     height: 42px;
@@ -87,7 +88,7 @@
     &:hover,
     &:focus {
       color: #d41443;
-      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      transition: color $main-effect;
     }
   }
 }
