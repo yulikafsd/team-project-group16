@@ -41,6 +41,7 @@
   @include minMedia($tab) {
     flex-direction: row;
     margin: calc(-1 * 20px / 2);
+    align-items: flex-start;
   }
   @include minMedia($desk) {
     justify-content: center;
@@ -204,19 +205,93 @@
     @include fontBody($fw: 700, $fs: 16px, $lh: 1.7);
   }
 }
-.products-list__discription::after {
-  content: '';
-  background-image: url(/images/products/arrow-right.png);
-  display: block;
-  margin-left: 50%;
-  transform: translateX(-50%);
+// Alternative way to put arrow-right img, but without an ability to open additional text area
+
+// .products-list__discription::after {
+//   content: '';
+//   background-image: url(/images/products/arrow-right.png);
+//   display: block;
+//   margin-left: 50%;
+//   transform: translateX(-50%);
+//   width: 40px;
+//   height: 40px;
+//   margin-top: 30px;
+//   @include minMedia($tab) {
+//     margin-top: 40px;
+//   }
+//   @include minMedia($desk) {
+//     margin-top: 62px;
+//   }
+// }
+.prod-icecream,
+.prod-icecoffee,
+.prod-milkshakes {
+  display: none;
+  max-width: 200px;
+  @include minMedia($tab) {
+    max-width: 198px;
+  }
+  @include minMedia($tab) {
+    max-width: 241px;
+  }
+}
+.btn-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 40px;
   height: 40px;
+  border-radius: 50%;
+  background-color: $secondary-color;
+  color: $primary-color;
+  cursor: pointer;
+  transition: background-color 0.05s $gallery-effect, color 0.05s $gallery-effect,
+    transform 0.05s $gallery-effect;
+}
+.arrow-right {
+  width: 40px;
+  height: 40px;
+  fill: currentColor;
+  transition: fill 0.05s $gallery-effect, transform 0.05s $gallery-effect;
+}
+.read-icecream,
+.read-icecoffee,
+.read-milkshakes {
+  margin: 0 auto;
   margin-top: 30px;
+  &:hover,
+  &:focus {
+    background-color: $primary-color;
+    color: $secondary-color;
+    transform: scale(1.1) rotate(90deg);
+  }
   @include minMedia($tab) {
     margin-top: 40px;
   }
   @include minMedia($desk) {
     margin-top: 62px;
+  }
+}
+#read-icecream:checked,
+#read-icecoffee:checked,
+#read-milkshakes:checked {
+  & ~ .read-icecream,
+  & ~ .read-icecoffee,
+  & ~ .read-milkshakes {
+    &:hover,
+    &:focus {
+      background-color: $primary-color;
+      transform: scale(1.1) rotate(-90deg);
+    }
+  }
+}
+#read-icecream:checked,
+#read-icecoffee:checked,
+#read-milkshakes:checked {
+  & ~ .prod-icecream,
+  & ~ .prod-icecoffee,
+  & ~ .prod-milkshakes {
+    display: block;
+    margin-top: 30px;
   }
 }
