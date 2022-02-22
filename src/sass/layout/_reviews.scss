@@ -1,5 +1,16 @@
 .rewiews {
-  padding: 60px 0;
+  padding-top: 40px;
+  padding-bottom: 43px;
+
+  @include minMedia($tab) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @include minMedia($desk) {
+    padding-top: 61px;
+    padding-bottom: 66px;
+  }
 }
 
 .swiper-slide {
