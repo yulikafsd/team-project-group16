@@ -99,10 +99,11 @@
 .promo-button__header {
   display: none;
   @include minMedia($tab) {
+    display: block;
+    min-width: 159px;
     padding: 0 37px;
-    margin-right: 0;
-    margin-left: 0px;
-    @include centeredFlex();
+    // margin-right: 0;
+    // margin-left: 0px;
   }
 }
 
