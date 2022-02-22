@@ -1,10 +1,10 @@
-.contacts-section {
+.section.contacts {
   padding-top: 43px;
   padding-bottom: 57px;
   background-image: linear-gradient(#ffffff 127px, #fff5f6 127px, #fff5f6 1563px);
   @include minMedia($tab) {
     padding-top: 59px;
-    padding-bottom: 83px;
+    padding-bottom: 79px;
     background-image: linear-gradient(#ffffff 137px, #fff5f6 137px, #fff5f6 811px);
   }
   @include minMedia($desk) {
