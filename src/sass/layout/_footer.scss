@@ -1,0 +1,158 @@
+.footer {
+  background-color: $primary-bg-color;
+  @include minMedia($mob) {
+    padding-top: 56px;
+  }
+
+  @include minMedia($tab) {
+    padding-top: 79px;
+  }
+
+  @include minMedia($desk) {
+    padding-top: 82px;
+  }
+}
+
+.footer__box {
+  @include minMedia($tab) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.footer__name {
+  font-family: $titan-one;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: calc(21 / 18);
+  text-transform: uppercase;
+  color: $secondary-accent-color;
+
+  margin-bottom: 43px;
+
+  @include maxMedia($preMob) {
+    width: 232px;
+  }
+
+  @include minMedia($mob) {
+    width: 232px;
+  }
+
+  @include minMedia($tab) {
+    width: 340px;
+    font-size: 26px;
+    line-height: calc(30 / 26);
+    margin-bottom: 91px;
+  }
+
+  @include minMedia($desk) {
+    width: 472px;
+    font-size: 30px;
+    line-height: calc(34 / 30);
+    margin-bottom: 97px;
+  }
+}
+
+.footer__name-bottom {
+  font-family: $titan-one;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 34px;
+  line-height: calc(39 / 34);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $primary-color;
+  width: 200px;
+
+  display: block;
+  margin-top: 17px;
+
+  @include minMedia($tab) {
+    font-size: 48px;
+    line-height: calc(55 / 48);
+    width: 340px;
+    margin-top: 16px;
+  }
+
+  @include minMedia($desk) {
+    font-size: 58px;
+    line-height: calc(66 / 58);
+    width: 100%;
+  }
+}
+
+.footer__social-list {
+  width: 162px;
+  margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 46px;
+}
+
+.footer__social-link {
+  display: inline-flex;
+}
+
+.footer__social-icon {
+  width: 32px;
+  height: 32px;
+  fill: $social-icon-bg-color;
+  &:hover {
+    fill: $primary-color;
+  }
+  &:focus {
+    fill: $primary-color;
+  }
+
+  @include minMedia($tab) {
+    width: 34px;
+    height: 34px;
+  }
+}
+
+.footer__phone {
+  font-family: $dm-sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: calc(22 / 12);
+  display: inline-block;
+  text-align: right;
+  color: $primary-color;
+
+  @include minMedia($tab) {
+    font-size: 14px;
+    line-height: calc(26 / 14);
+  }
+}
+
+.footer__phone-text {
+  font-family: $dm-sans;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.86%;
+  letter-spacing: 0.02em;
+  display: inline-block;
+  color: $primary-text-color;
+}
+
+.footer__bottom-text {
+  font-family: $dm-sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: calc(21 / 14);
+  text-align: center;
+  color: $secondary-text-color;
+  border-top: 1px solid $review-bg-color;
+  padding-top: 22px;
+  padding-bottom: 25px;
+  margin: 0 auto;
+
+  @include minMedia($tab) {
+    line-height: calc(26 / 14);
+    padding-top: 29px;
+    padding-bottom: 18px;
+  }
+}

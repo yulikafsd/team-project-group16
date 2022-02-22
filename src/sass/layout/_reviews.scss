@@ -1,0 +1,239 @@
+.rewiews {
+  padding-top: 40px;
+  padding-bottom: 43px;
+
+  @include minMedia($tab) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @include minMedia($desk) {
+    padding-top: 61px;
+    padding-bottom: 66px;
+  }
+}
+
+.swiper-slide {
+  position: relative;
+}
+
+.rewiews-photo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 29px;
+
+  @include minMedia($mob) {
+  }
+
+  @include minMedia($tab) {
+    margin-bottom: 19px;
+  }
+
+  @include minMedia($desk) {
+    margin-bottom: 15px;
+  }
+}
+
+.box {
+  position: relative;
+  padding: 3px 16px 6px 7px;
+  background-image: repeating-linear-gradient(
+    transparent 0px,
+    transparent 30px,
+    #e1e1e1 30px,
+    #e1e1e1 31px
+  );
+  @include minMedia($mob) {
+    padding: 5px 16px 6px 7px;
+  }
+
+  @include minMedia($tab) {
+    padding: 3px 44px 6px 20px;
+  }
+
+  @include minMedia($desk) {
+    padding: 1px 35px 1px 28px;
+  }
+}
+
+.rewiews-post {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  padding: 40px 50px 30px 50px;
+  width: 280px;
+  height: auto;
+  background-color: #fafafa;
+
+  @include minMedia($mob) {
+    width: 440px;
+    height: auto;
+    margin-bottom: 26px;
+  }
+
+  @include minMedia($tab) {
+    padding: 46px 36px 28px 60px;
+    margin-bottom: 24px;
+    width: 620px;
+    height: auto;
+  }
+
+  @include minMedia($desk) {
+    padding: 46px 54px 32px 59px;
+    margin-bottom: 15px;
+    width: 926px;
+    height: auto;
+  }
+
+  &::before {
+    position: absolute;
+    top: 26px;
+    left: 61px;
+    content: url(../images/rewiews/rewiews-post-icon.svg);
+
+    @include minMedia($mob) {
+      top: 27px;
+      left: 48px;
+    }
+
+    @include minMedia($tab) {
+      top: 32px;
+      left: 41px;
+    }
+    @include minMedia($desk) {
+      top: 32px;
+      left: 50px;
+    }
+  }
+}
+
+.rewiews-text {
+  position: relative;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.583;
+  text-align: center;
+  overflow: auto;
+
+  @include minMedia($mob) {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 2.3;
+    text-align: center;
+    letter-spacing: 0.04em;
+  }
+
+  @include minMedia($tab) {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 2.142;
+    text-align: center;
+    letter-spacing: 0.04em;
+  }
+
+  @include minMedia($desk) {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.875;
+    text-align: center;
+    letter-spacing: 0.04em;
+  }
+}
+
+.rewiews-svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+
+  @include minMedia($tab) {
+    margin-bottom: 14px;
+  }
+  @include minMedia($desk) {
+    margin-bottom: 15px;
+  }
+}
+
+.rewiews-svg-icon {
+  fill: #d31342;
+}
+
+.rewiews-sity {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+
+  @include minMedia($tab) {
+    margin-bottom: 35px;
+  }
+}
+
+.rewiews-name {
+  font-size: 14px;
+  line-height: 1.857;
+  text-align: center;
+
+  @include minMedia($mob) {
+    font-size: 15px;
+    line-height: 1.866;
+  }
+
+  @include minMedia($tab) {
+    font-size: 16px;
+    line-height: 1.875;
+  }
+  @include minMedia($desk) {
+    font-size: 20px;
+    line-height: 1.85;
+  }
+}
+
+// PAGINATION
+.swiper-pagination {
+  position: relative;
+}
+
+.swiper-pagination-bullet {
+  display: inline-block;
+  background-image: url(../images/rewiews/rewiews-swiper-gray.svg);
+  background-size: cover;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: #d31342;
+    opacity: 1;
+  }
+
+  &:first-child {
+    background-image: url(../images/rewiews/rewiews-home-gray.svg);
+    background-color: transparent;
+    background-size: cover;
+    border-radius: unset;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background-image: url(../images/rewiews/rewiews-home-red.svg);
+    }
+  }
+}
+
+.swiper-pagination-bullet-active {
+  &:first-child {
+    background-image: url(../images/rewiews/rewiews-home-red.svg);
+    background-size: cover;
+    border-radius: unset;
+  }
+
+  &:nth-child(n + 2) {
+    background-image: url(../images/rewiews/rewiews-swiper-red.svg);
+    background-size: cover;
+    background-color: #d31342;
+    border-radius: 50%;
+  }
+}
