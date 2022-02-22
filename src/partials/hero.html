@@ -1,7 +1,21 @@
 <section class="section hero">
   <div class="container hero__box">
     <div class="hero__circle"></div>
-    <img class="hero__pic" src="./images/hero-icecream.png" alt="ice-cream" />
+    <picture>
+      <source srcset="
+      ./images/hero/hero-icecream-desktop-x1.png 1x,
+      ./images/hero/hero-icecream-desktop-x2.png 2x"
+      media="(min-width:1200px)">
+      <source srcset="
+      ./images/hero/hero-icecram-tablet-1x.png 1x,
+      ./images/hero/hero-icecram-tablet-2x.png 2x"
+      media="(min-width:768px)">
+      <source srcset="
+      ./images/hero/hero-icecream-phone-x1.png 1x,
+      ./images/hero/hero-icecream-phone-x2.png 2x"
+      media="(min-width:480px)">
+      <img class="hero__pic" src="./images/hero/hero-icecream-desktop-x1.png" alt="человек1">
+  </picture>
     <div class="hero__content">
       <h1 class="hero__title">
         ice cream made with
@@ -9,16 +23,36 @@
       </h1>
       <ul class="hero-list">
         <li class="hero-list__item">
-          <a href="" class="hero-list__link-left">Products</a>
+          <a href="#products" class="hero-list__link-left">Products</a>
         </li>
         <li class="hero-list__item">
-          <a href="" class="hero-list__link-right">How it&#8242;s made&#63;</a>
+          <a href="#about" class="hero-list__link-right">How it&#8242;s made&#63;</a>
         </li>
       </ul>
 
     </div>
-    <img src="./images/hero-milk.png" alt="milk" class="hero__milk" />
-    <img src="./images/hero-girl.png" alt="girl" class="hero__girl" />
+    <picture>
+      <source srcset="
+      ./images/hero/hero-milk-desktop-x1.png 1x,
+      ./images/hero/hero-milk-desktop-x2.png 2x"
+      media="(min-width:1200px)">
+      <source srcset="
+      ./images/hero/hero-milk-tablet-x1.png 1x,
+      ./images/hero/hero-milk-tablet-x2.png 2x"
+      media="(min-width:768px)">
+      <img class="hero__milk" src="./images/hero/hero-milk-desktop-x1.png" alt="milk">
+    </picture>
+    <picture>
+      <source srcset="
+      ./images/hero/hero-girl-desktop-x1.png 1x,
+      ./images/hero/hero-girl-desktop-x2.png 2x"
+      media="(min-width:1200px)">
+      <source srcset="
+      ./images/hero/hero-girl-tablet-x1.png 1x,
+      ./images/hero/hero-girl-tablet-x2.png 2x"
+      media="(min-width:768px)">
+      <img class="hero__girl" src="./images/hero/hero-girl-desktop-x1.png" alt="girl">
+    </picture>
     <div class="hero__information">
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -32,18 +66,14 @@
           <span class="presentation-list__span">16</span>
           cafes
         </a>
-        <svg class="presentation-list__icon">
-          <use href="./images/ellipse.svg"></use>
-        </svg>
+        <div class="presentation-list__circle"></div>
       </li>
       <li class="presentation-list__item">
         <a href="" class="presentation-list__link">
           <span class="presentation-list__span">23</span>
           food trucks
         </a>
-        <svg class="presentation-list__icon">
-          <use href="./images/ellipse.svg"></use>
-        </svg>
+        <div class="presentation-list__circle"></div>
       </li>
     </ul>
   </div>
