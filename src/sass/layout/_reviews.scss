@@ -38,7 +38,6 @@
   position: relative;
   padding: 3px 16px 6px 7px;
   background-image: repeating-linear-gradient(transparent 0px 30px, #a7a7a7 31px, #a3a3a3 25px);
-
   @include minMedia($mob) {
     padding: 5px 16px 6px 7px;
   }
