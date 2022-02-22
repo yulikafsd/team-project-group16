@@ -25,39 +25,46 @@
 }
 
 .contacts-list {
-  margin-bottom: -20px;
+  // margin-bottom: -20px;
 
   @include minMedia($tab) {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -20px;
+    // margin-left: -20px;
     margin-bottom: 0;
   }
 
   @include minMedia($desk) {
-    margin-left: -31px;
+    // margin-left: -31px;
   }
 }
 
+.contacts-item:not(:last-child) {
+  margin-bottom: 20px;
+  @include minMedia($tab) {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+  @include minMedia($desk) {
+    margin-right: 30px;
+  }
+}
 .contacts-item {
   max-width: 220px;
   background-color: $secondary-color;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
-  margin-bottom: 20px;
   padding: 43px 20px;
   margin-left: auto;
   margin-right: auto;
   @include minMedia($tab) {
     width: calc(100% / 3 - 20px);
-    margin-left: 20px;
     padding: 50px 31px;
     margin-bottom: 0;
   }
   @include minMedia($desk) {
     max-width: 330px;
-    width: calc(100% / 3 - 31px);
-    margin-left: 31px;
+    width: calc(100% / 3 - 30px);
     padding: 52px 43px;
   }
 }
