@@ -173,6 +173,8 @@
   margin-bottom: 30px;
   @include minMedia($desk) {
     margin-bottom: 32px;
+    @include fontTitle($fs: 30px, $lh: 34 / 30);
+    color: $secondary-color;
   }
   @include fontTitle($fs: 20px, $lh: 23 / 20);
   text-align: center;
@@ -197,6 +199,9 @@
   color: $secondary-color;
   @include minMedia($tab) {
     @include fontBody($fw: 700, $fs: 14px, $lh: 1.8);
+  }
+  @include minMedia($desk) {
+    @include fontBody($fw: 700, $fs: 16px, $lh: 1.7);
   }
 }
 .products-list__discription::after {
