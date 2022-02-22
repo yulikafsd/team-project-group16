@@ -1,0 +1,9 @@
+.conteiner-mob {
+  width: 250px;
+  padding-left: 21px;
+  padding-right: 0;
+  @include minMedia($tab) {
+    width: 100%;
+    padding-left: 24px;
+  }
+}
