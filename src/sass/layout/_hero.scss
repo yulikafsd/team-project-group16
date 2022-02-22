@@ -31,21 +31,19 @@
   height: 344px;
   background: $secondary-accent-color;
   border-radius: 50%;
-  animation: showRight 3s, pulsation 2s linear 3s infinite;
+  animation: showRightSmart 3s, pulsation 2s linear 3s infinite;
   @media screen and (min-width: 768px) {
-    & {
       width: 324px;
       height: 322px;
       right: 20%;
       bottom: 45px;
-    }
+    
   }
   @media screen and (min-width: 1200px) {
-    & {
       width: 538px;
       height: 538px;
       bottom: 75px;
-    }
+      animation: showRight 3s, pulsation 2s linear 3s infinite;
   }
 }
 
@@ -55,6 +53,26 @@
   }
   100% {
     right: 20%;
+    
+  }
+}
+
+@keyframes showRightSmart {
+  0% {
+    right: -100%;
+  }
+  100% {
+    right: -20%;
+  }
+}
+
+@keyframes showBottom {
+  0% {
+    bottom: -100%;
+
+  }
+  100% {
+    bottom: 0;
   }
 }
 
@@ -104,6 +122,7 @@
   margin-left: auto;
   width: 175px;
   height: 410px;
+  animation: showBottom 2s;
   @media screen and (min-width: 768px) {
     & {
       width: 143px;
@@ -240,7 +259,7 @@
 .hero__information {
   max-width: 114px;
   position: absolute;
-  bottom: 34px;
+  bottom: 40px;
   left: 20%;
   font-size: 8px;
   line-height: 1.5;
@@ -282,11 +301,17 @@
   position: absolute;
   top: 25%;
   right: 5%;
+  
   @media screen and (max-width: 767px) {
     display: none;
+    
+  }
+  @media screen and (min-width: 768px) {
+    right: 7%;
+    
   }
   @media screen and (min-width: 1200px) {
-    right: 75px;
+    right: 121px;
   }
 }
 
@@ -304,7 +329,7 @@
   }
   @media screen and (min-width: 1200px) {
     &:not(:last-child) {
-      margin-bottom: 15px;
+      margin-bottom: 30px;
     }
   }
 }
@@ -316,11 +341,9 @@
   color: $secondary-color;
   text-decoration: none;
   @media screen and (min-width: 120px) {
-    & {
       font-size: 14px;
       line-height: 1.28;
       letter-spacing: 0.03em;
-    }
   }
 }
 
@@ -331,22 +354,28 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $primary-color;
+  font-weight: 400;
 
   @media screen and (min-width: 1200px) {
-    & {
       font-size: 46px;
       line-height: 1.15;
       letter-spacing: 0.03em;
-    }
   }
 }
 
-.presentation-list__icon {
+.presentation-list__circle {
   width: 16px;
   height: 16px;
   position: absolute;
-  right: -10px;
-  top: 0;
-  fill: $secondary-color;
+  top: -4px;
+  right: 2px;
+  background: white;
+  border-radius: 50%;
   z-index: -1;
+  animation: pulsation 2s linear 3s infinite;
+  @media screen and (min-width: 1200px) {
+    width: 30px;
+    height: 30px;
+    right: -21px;
+  }
 }
