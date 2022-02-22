@@ -1,8 +1,8 @@
 .about {
   position: relative;
   background-color: $primary-bg-color;
-  padding-top: 139px;
-  padding-bottom: 39px;
+  padding-top: 125px;
+  padding-bottom: 20px;
   @include rangeMedia($tab, $preDesk) {
     .left-picture {
       display: none;
@@ -18,7 +18,7 @@
   }
   @include minMedia($desk) {
     padding-top: 125px;
-    padding-bottom: 35px;
+    padding-bottom: 73px;
   }
 }
 .left-picture {
