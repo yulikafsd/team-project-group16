@@ -195,17 +195,31 @@
 }
 
 .swiper-pagination-bullet {
+  display: inline-block;
   background-image: url(../images/rewiews/rewiews-swiper-gray.svg);
   background-size: cover;
-  fill: #d9d9d9;
+  border-radius: 50%;
   width: 12px;
   height: 12px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: #d31342;
+    opacity: 1;
+  }
 
   &:first-child {
     background-image: url(../images/rewiews/rewiews-home-gray.svg);
     background-color: transparent;
     background-size: cover;
     border-radius: unset;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background-image: url(../images/rewiews/rewiews-home-red.svg);
+    }
   }
 }
 
@@ -218,8 +232,8 @@
 
   &:nth-child(n + 2) {
     background-image: url(../images/rewiews/rewiews-swiper-red.svg);
-    background-color: #d31342;
     background-size: cover;
+    background-color: #d31342;
     border-radius: 50%;
   }
 }
