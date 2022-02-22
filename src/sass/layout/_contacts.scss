@@ -4,8 +4,8 @@
   background-image: linear-gradient(#ffffff 127px, #fff5f6 127px, #fff5f6 1563px);
   @include minMedia($tab) {
     padding-top: 59px;
-    padding-bottom: 83px;
-    background-image: linear-gradient(#ffffff 137px, #fff5f6 137px, #fff5f6 811px);
+    padding-bottom: 79px;
+    background-image: linear-gradient(#ffffff 137px, #fff5f6 137px, #fff5f6 807px);
   }
   @include minMedia($desk) {
     padding-top: 66px;
