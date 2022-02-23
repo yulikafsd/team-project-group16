@@ -24,6 +24,7 @@
     min-width: 320px;
   }
   @include minMedia($tab) {
+    border-radius: 10px;
     padding: 40px;
     // overflow: unset;
     overflow: auto;
@@ -67,4 +68,5 @@
 .modal-about__video {
   width: 100%;
   max-height: 100%;
+  border: 0px;
 }
