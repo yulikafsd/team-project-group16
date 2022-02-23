@@ -202,7 +202,8 @@
   @include minMedia($desk) {
     @include fontBody($fs: 16px, $lh: 1.83);
   }
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     color: $primary-color;
   }
 }
@@ -216,7 +217,8 @@
   @include minMedia($desk) {
     @include fontBody($fs: 16px, $lh: 1.83);
   }
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     color: $primary-color;
   }
 }
@@ -273,6 +275,11 @@
   @include minMedia($desk) {
     width: 180px;
   }
+}
+
+.contact-btn__link {
+  display: block;
+  color: $secondary-color;
 }
 
 .location-vector {
