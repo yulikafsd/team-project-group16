@@ -12,16 +12,16 @@
   }
 
   @include rangeMedia($tab, $preDesk) {
-      padding-top: 130px;
-      padding-bottom: 33px;
-      background-size: 0 0;
+    padding-top: 130px;
+    padding-bottom: 33px;
+    background-size: 0 0;
   }
-  
+
   @include minMedia($desk) {
     padding-top: 125px;
     padding-bottom: 35px;
     background-image: url(../images/milk-right-desk-1x.png), url(../images/milk-left-desk-1x.png);
-    background-size: 45%;
+    background-size: 550px;
     background-repeat: no-repeat;
     background-position: 100% 100%, 0 90%;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
