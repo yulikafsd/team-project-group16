@@ -12,12 +12,11 @@
   }
 
   @include rangeMedia($tab, $preDesk) {
-    @include minMedia($tab) {
       padding-top: 130px;
       padding-bottom: 33px;
       background-size: 0 0;
-    }
   }
+  
   @include minMedia($desk) {
     padding-top: 125px;
     padding-bottom: 35px;

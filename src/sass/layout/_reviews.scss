@@ -37,8 +37,12 @@
 .box {
   position: relative;
   padding: 3px 16px 6px 7px;
-  background-image: repeating-linear-gradient(transparent 0px 30px, #a7a7a7 31px, #a3a3a3 25px);
-
+  background-image: repeating-linear-gradient(
+    transparent 0px,
+    transparent 30px,
+    #e1e1e1 30px,
+    #e1e1e1 31px
+  );
   @include minMedia($mob) {
     padding: 5px 16px 6px 7px;
   }
@@ -60,7 +64,7 @@
   padding: 40px 50px 30px 50px;
   width: 280px;
   height: auto;
-  background-color: rgba(#fafafa, 0.4);
+  background-color: #fafafa;
 
   @include minMedia($mob) {
     width: 440px;
@@ -190,18 +194,44 @@
   position: relative;
 }
 
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 9px);
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 0;
+}
+
 .swiper-pagination-bullet {
+  display: inline-block;
   background-image: url(../images/rewiews/rewiews-swiper-gray.svg);
   background-size: cover;
-  fill: #d9d9d9;
+  border-radius: 50%;
   width: 12px;
   height: 12px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: #d31342;
+    opacity: 1;
+  }
 
   &:first-child {
     background-image: url(../images/rewiews/rewiews-home-gray.svg);
     background-color: transparent;
     background-size: cover;
     border-radius: unset;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background-image: url(../images/rewiews/rewiews-home-red.svg);
+    }
   }
 }
 
@@ -214,8 +244,8 @@
 
   &:nth-child(n + 2) {
     background-image: url(../images/rewiews/rewiews-swiper-red.svg);
-    background-color: #d31342;
     background-size: cover;
+    background-color: #d31342;
     border-radius: 50%;
   }
 }

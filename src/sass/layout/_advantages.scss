@@ -7,7 +7,7 @@
     padding-bottom: 70px;
   }
   @include minMedia($desk) {
-    padding-top: 35px;
+    padding-top: 73px;
   }
 }
 .advantages-list {
@@ -27,8 +27,11 @@
 .advantages-list__item:not(:last-child) {
   display: block;
   margin-bottom: 38px;
-  @include minMedia($tab) {
+  @include minMedia($mob) {
     margin-bottom: 0;
+    margin-right: 20px;
+  }
+  @include minMedia($tab) {
     margin-right: 60px;
   }
   @include minMedia($desk) {

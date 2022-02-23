@@ -9,9 +9,9 @@
 }
 
 .section.gallery {
-  padding-top: 48px;
+  padding-top: 40px;
   padding-bottom: 40px;
-  background-image: linear-gradient(to bottom, #fff5f6 45%, #ffffff 45%);
+  background-image: linear-gradient(to bottom, #fff5f6 43%, #ffffff 43%);
 
   @include minMedia($tab) {
     padding-top: 70px;
@@ -143,12 +143,12 @@
   z-index: 0;
 
   .gallery-grid__link:hover & {
-    transform: scale(2);
+    transform: scale(1.5);
     position: absolute;
     z-index: 1;
   }
 
   .gallery-grid__link:hover &--big {
-    transform: scale(1.5);
+    transform: scale(1.2);
   }
 }
