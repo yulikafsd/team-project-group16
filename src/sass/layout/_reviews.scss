@@ -60,7 +60,7 @@
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 30px;
+  margin-bottom: 52px;
   padding: 40px 50px 30px 50px;
   width: 280px;
   height: auto;
@@ -167,6 +167,21 @@
   @include minMedia($tab) {
     margin-bottom: 35px;
   }
+
+  // &::before {
+  //   content: '...';
+  //   position: absolute;
+  //   bottom: 40px;
+  //   left: 130px;
+  //   display: block;
+  //   @include fontTitle($fs: 18px, $ls: 10px);
+  //   @include minMedia($desk) {
+  //     bottom: 34px;
+  //   }
+  //   @include minMedia($desk) {
+  //     bottom: 46px;
+  //   }
+  // }
 }
 
 .rewiews-name {
