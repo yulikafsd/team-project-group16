@@ -56,12 +56,14 @@
   padding-right: 40px;
   background-color: $primary-accent-color;
   border-radius: 24px;
+
   @include maxMedia($preTab) {
     width: 280px;
     &:not(:last-child) {
       margin-bottom: 130px;
     }
   }
+
   @include minMedia($tab) {
     padding-bottom: 40px;
     padding-top: 152px;
@@ -245,14 +247,12 @@
   background-color: $secondary-color;
   color: $primary-color;
   cursor: pointer;
-  transition: background-color 0.05s $gallery-effect, color 0.05s $gallery-effect,
-    transform 0.05s $gallery-effect;
+  transition: background-color $gallery-effect, color $gallery-effect, transform $gallery-effect;
 }
-.arrow-right {
-  width: 40px;
-  height: 40px;
+.products .arrow-right {
+  width: 11px;
+  height: 10px;
   fill: currentColor;
-  transition: fill 0.05s $gallery-effect, transform 0.05s $gallery-effect;
 }
 .read-icecream,
 .read-icecoffee,

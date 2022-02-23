@@ -277,6 +277,9 @@
   border: none;
   border-radius: 50%;
   background-color: $secondary-color;
+  color: $primary-color;
+
+  transition: color $main-effect, background-color $main-effect;
 
   @media screen and (max-width: 767px) {
     display: none;
@@ -286,14 +289,21 @@
     width: 26px;
     height: 26px;
   }
+
+  &:hover,
+  &:focus {
+    color: $secondary-color;
+    background-color: $primary-color;
+  }
 }
 
-.arrow-right {
-  width: 18px;
-  height: 18px;
+.hero .arrow-right {
+  width: 6px;
+  height: 5px;
+  fill: currentColor;
   @media screen and (min-width: 1200px) {
-    width: 26px;
-    height: 26px;
+    width: 8px;
+    height: 7px;
   }
 }
 .presentation-list {
