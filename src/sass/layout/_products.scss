@@ -115,18 +115,18 @@
 .products-list__item:nth-child(1) {
   &::before {
     background-image: url(/images/products/product-1-1x.png);
-    @media (min-device-pixel-ratio: 2) {
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(/images/products/product-1-2x.png);
     }
     @include minMedia($tab) {
       background-image: url(/images/products/product-1-tab-1x.png);
-      @media (min-device-pixel-ratio: 2) {
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         background-image: url(/images/products/product-1-tab-2x.png);
       }
     }
     @include minMedia($desk) {
       background-image: url(/images/products/product-1-desk-1x.png);
-      @media (min-device-pixel-ratio: 2) {
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         background-image: url(/images/products/product-1-desk-2x.png);
       }
     }
@@ -135,18 +135,18 @@
 .products-list__item:nth-child(2) {
   &::before {
     background-image: url(/images/products/product-2-1x.png);
-    @media (min-device-pixel-ratio: 2) {
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(/images/products/product-2-2x.png);
     }
     @include minMedia($tab) {
       background-image: url(/images/products/product-2-tab-1x.png);
-      @media (min-device-pixel-ratio: 2) {
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         background-image: url(/images/products/product-2-tab-2x.png);
       }
     }
     @include minMedia($desk) {
       background-image: url(/images/products/product-2-desk-1x.png);
-      @media (min-device-pixel-ratio: 2) {
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         background-image: url(/images/products/product-2-desk-2x.png);
       }
     }
@@ -155,18 +155,30 @@
 .products-list__item:nth-child(3) {
   &::before {
     background-image: url(/images/products/product-3-1x.png);
-    @media (min-device-pixel-ratio: 2) {
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
       background-image: url(/images/products/product-3-2x.png);
     }
     @include minMedia($tab) {
       background-image: url(/images/products/product-3-tab-1x.png);
-      @media (min-device-pixel-ratio: 2) {
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
         background-image: url(/images/products/product-3-tab-2x.png);
       }
     }
     @include minMedia($desk) {
       background-image: url(/images/products/product-3-desk-1x.png);
-      @media (min-device-pixel-ratio: 2) {
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
         background-image: url(/images/products/product-3-desk-2x.png);
       }
     }
