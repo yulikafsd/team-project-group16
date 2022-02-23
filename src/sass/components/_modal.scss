@@ -25,6 +25,7 @@
     min-width: 320px;
   }
   @include minMedia($tab) {
+    border-radius: 10px;
     overflow: auto;
     // overflow: unset;
     height: auto;
@@ -138,12 +139,15 @@
   box-shadow: $contacts-shadow;
   margin-right: 8.28px;
   @include centeredFlex();
+  transition: transform $main-effect;
+  transition: border $main-effect, background-color $main-effect, box-shadow $main-effect;
 
   .form__policy-check:checked + & {
     border: 1px solid $primary-color;
     border-radius: 4px;
     background-color: $primary-color;
     box-shadow: none;
+    transition: border $main-effect, background-color $main-effect, box-shadow $main-effect;
   }
 }
 
