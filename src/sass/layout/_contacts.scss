@@ -202,6 +202,12 @@
   @include minMedia($desk) {
     @include fontBody($fs: 16px, $lh: 1.83);
   }
+  &:hover {
+    color: $primary-color;
+  }
+  &:focus {
+    color: $primary-color;
+  }
 }
 
 .contacts-link-tel {
@@ -212,6 +218,12 @@
   }
   @include minMedia($desk) {
     @include fontBody($fs: 16px, $lh: 1.83);
+  }
+  &:hover {
+    color: $primary-color;
+  }
+  &:focus {
+    color: $primary-color;
   }
 }
 
