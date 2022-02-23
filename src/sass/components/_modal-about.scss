@@ -4,11 +4,10 @@
   left: 50%;
   margin: 0 auto;
   padding: 30px;
-  width: 100%;
   max-width: 450px;
   width: 95vw;
-  max-height: 598px;
-  height: 95vh;
+  max-height: 510px;
+  max-height: 100vh;
   overflow: scroll;
   background-color: $primary-bg-color;
   box-shadow: $contacts-shadow;
@@ -26,15 +25,13 @@
   }
   @include minMedia($tab) {
     padding: 40px;
-    overflow: unset;
-    border-radius: 20px;
-    max-width: 640px;
-    max-height: 555px;
+    // overflow: unset;
+    overflow: auto;
     height: auto;
+    max-width: 640px;
   }
   @include minMedia($desk) {
-    max-width: 640px;
-    max-height: 568px;
+    // max-height: 568px;
   }
 }
 
