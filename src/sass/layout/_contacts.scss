@@ -202,10 +202,7 @@
   @include minMedia($desk) {
     @include fontBody($fs: 16px, $lh: 1.83);
   }
-  &:hover {
-    color: $primary-color;
-  }
-  &:focus {
+  &:hover, &:focus {
     color: $primary-color;
   }
 }
@@ -219,10 +216,7 @@
   @include minMedia($desk) {
     @include fontBody($fs: 16px, $lh: 1.83);
   }
-  &:hover {
-    color: $primary-color;
-  }
-  &:focus {
+  &:hover, &:focus {
     color: $primary-color;
   }
 }
