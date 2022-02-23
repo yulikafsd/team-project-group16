@@ -33,6 +33,7 @@
   border-radius: 50%;
   animation: showRightSmart 3s, pulsation 2s linear 3s infinite;
   @media screen and (min-width: 768px) {
+    animation: showRight 3s, pulsation 2s linear 3s infinite;
     width: 324px;
     height: 322px;
     right: 20%;
@@ -42,7 +43,6 @@
     width: 538px;
     height: 538px;
     bottom: 75px;
-    animation: showRight 3s, pulsation 2s linear 3s infinite;
   }
 }
 
