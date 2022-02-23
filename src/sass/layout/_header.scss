@@ -14,6 +14,7 @@
 .header .header__container {
   // outline: 1px solid orange;
   @include centeredFlex($just: space-between);
+
   @include minMedia($desk) {
     padding-left: 6px;
   }
@@ -81,6 +82,7 @@
 }
 .burger__header {
   margin-left: auto;
+  margin-right: 0;
   @include minMedia($desk) {
     display: none;
   }
