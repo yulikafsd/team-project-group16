@@ -43,6 +43,14 @@
   text-align: center;
   @include fontTitle($fs: 30px, $lh: 34 / 30);
 }
+
+.header-logo__box .header-logo__icon {
+  &:hover,
+  &:focus {
+    animation: coin 5s infinite;
+  }
+}
+
 .animate__flip {
   animation-duration: 2000ms;
   animation-name: flip;
