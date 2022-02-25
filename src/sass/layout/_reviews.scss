@@ -17,13 +17,10 @@
   position: relative;
 }
 
-.rewiews-photo {
+.swiper-slide__photo {
   display: flex;
   justify-content: center;
   margin-bottom: 29px;
-
-  @include minMedia($mob) {
-  }
 
   @include minMedia($tab) {
     margin-bottom: 19px;
@@ -34,7 +31,7 @@
   }
 }
 
-.box {
+.swiper-slide__gradient {
   position: relative;
   padding: 3px 16px 6px 7px;
   background-image: repeating-linear-gradient(
@@ -56,34 +53,27 @@
   }
 }
 
-.rewiews-post {
+.swiper-slide__post {
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 52px;
   padding: 40px 50px 30px 50px;
   width: 280px;
   height: auto;
-  background-color: #fafafa;
+  background: #fafafa;
 
   @include minMedia($mob) {
     width: 440px;
-    height: auto;
-    margin-bottom: 52px;
   }
 
   @include minMedia($tab) {
     padding: 46px 36px 28px 60px;
-    margin-bottom: 42px;
     width: 620px;
-    height: auto;
   }
 
   @include minMedia($desk) {
     padding: 46px 54px 32px 59px;
-    margin-bottom: 34px;
     width: 926px;
-    height: auto;
   }
 
   &::before {
@@ -108,8 +98,7 @@
   }
 }
 
-.rewiews-text {
-  // position: relative;
+.swiper-slide__text {
   font-weight: 500;
   font-size: 12px;
   line-height: 2.583;
@@ -117,63 +106,26 @@
   overflow: auto;
 
   @include minMedia($mob) {
-    font-weight: 500;
     font-size: 13px;
     line-height: 2.3;
-    text-align: center;
     letter-spacing: 0.04em;
   }
 
   @include minMedia($tab) {
-    font-weight: 500;
     font-size: 14px;
     line-height: 2.142;
-    text-align: center;
-    letter-spacing: 0.04em;
   }
 
   @include minMedia($desk) {
-    font-weight: 500;
     font-size: 16px;
     line-height: 1.875;
-    text-align: center;
-    letter-spacing: 0.04em;
   }
 }
 
-.rewiews-svg {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 18px;
-
-  @include minMedia($tab) {
-    margin-bottom: 14px;
-  }
-  @include minMedia($desk) {
-    margin-bottom: 15px;
-  }
-}
-
-.rewiews-svg-icon {
-  fill: #d31342;
-}
-
-.rewiews-sity {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 30px;
-
-  @include minMedia($tab) {
-    margin-bottom: 35px;
-  }
-}
-
-.rewiews-name {
+.swiper-slide__name {
+  text-align: center;
   font-size: 14px;
   line-height: 1.857;
-  text-align: center;
 
   @include minMedia($mob) {
     font-size: 15px;
@@ -189,24 +141,26 @@
     line-height: 1.85;
   }
 
-  // &::before {
-  //   content: '...';
-  //   position: absolute;
-  //   bottom: 38px;
-  //   left: 47%;
-  //   @include fontTitle($ff: $dm-sans, $fs: 35px, $ls: 9px, $lh: 1);
-  //   @include minMedia($desk) {
-  //     bottom: 34px;
-  //   }
-  //   @include minMedia($desk) {
-  //     bottom: 46px;
-  //   }
-  // }
+  &::before {
+    content: '...';
+    display: block;
+    margin-bottom: 8px;
+    @include fontTitle($ff: $dm-sans, $fs: 30px, $ls: 10px, $lh: 1);
+
+    @include minMedia($tab) {
+      margin-bottom: 12px;
+    }
+  }
 }
 
 // PAGINATION
 .swiper-pagination {
   position: relative;
+  margin-top: 30px;
+
+  @include minMedia($tab) {
+    margin-top: 35px;
+  }
 }
 
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
@@ -214,16 +168,10 @@
   margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 9px);
 }
 
-.swiper-horizontal > .swiper-pagination-bullets,
-.swiper-pagination-bullets.swiper-pagination-horizontal,
-.swiper-pagination-custom,
-.swiper-pagination-fraction {
-  bottom: 0;
-}
-
 .swiper-pagination-bullet {
   display: inline-block;
-  background-image: url(../images/rewiews/rewiews-swiper-gray.svg);
+  background-color: #d9d9d9;
+  opacity: 1;
   background-size: cover;
   border-radius: 50%;
   width: 12px;
@@ -258,7 +206,6 @@
   }
 
   &:nth-child(n + 2) {
-    background-image: url(../images/rewiews/rewiews-swiper-red.svg);
     background-size: cover;
     background-color: #d31342;
     border-radius: 50%;

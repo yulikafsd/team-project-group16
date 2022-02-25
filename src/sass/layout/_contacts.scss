@@ -26,17 +26,10 @@
 }
 
 .contacts-list {
-  // margin-bottom: -20px;
-
   @include minMedia($tab) {
     display: flex;
     flex-wrap: wrap;
-    // margin-left: -20px;
     margin-bottom: 0;
-  }
-
-  @include minMedia($desk) {
-    // margin-left: -31px;
   }
 }
 
@@ -116,18 +109,15 @@
   max-width: 179px;
   @include minMedia($tab) {
     @include fontBody($fs: 14px, $lh: 1.66);
-
     max-width: 145px;
   }
   @include minMedia($desk) {
     @include fontBody($fs: 16px, $lh: 1.83);
-
     max-width: 243px;
   }
 }
 
 .contacts-schedule-list {
-  // width: 179px;
   margin-top: 25px;
   padding-top: 25px;
   padding-bottom: 25px;
